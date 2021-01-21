@@ -15,3 +15,8 @@ print(y)  # False
 
 name = input("Enter your name: ")
 print(name)
+print(type(name))
+
+numbers = input("Enter your Age: ")
+print(numbers)
+print(type(numbers))
