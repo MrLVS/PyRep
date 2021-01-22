@@ -1,7 +1,7 @@
 # input function
 
 
-emptylist = []
+uniqueList = []
 print("Введите любые слова, слоги или числа и разделите их пробелом.")
 answer = input("--> ")
 
@@ -10,11 +10,11 @@ def functionone(text):
     splittext = text.split()
 
     for i in splittext:
-        if i not in list:
-            list.append(i)
+        if i not in uniqueList:
+            uniqueList.append(i)
 
     print(splittext)
-    print(list)
+    print(uniqueList)
 
 
 functionone(answer)
