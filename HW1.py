@@ -10,8 +10,8 @@ x = a == c
 y = a == b
 z = d == e
 w = f == d
-
-
+str = bool("Любая строка, кроме пустой '', будет True")
+nullstr = bool('')
 
 print(type(a))  # <class 'bool'>
 print(type(b))  # <class 'str'>
@@ -19,8 +19,10 @@ print(type(x))  # <class 'bool'>
 print(x)  # True  bool a(True) соотвествует int c(1)
 print(type(y))  # <class 'bool'>
 print(y)  # False
-print(z) # True bool d(False) соответствует int e(0)
-print(w) # False
+print(z)  # True bool d(False) соответствует int e(0)
+print(w)  # False
+print(str)  # True
+print(nullstr)  # False
 
 # input demonstration
 name = input("Enter your name: ")
