@@ -1,15 +1,29 @@
 # input function
 
-list = []
+
+emptylist = []
 print("Введите любые слова, слоги или числа и разделите их пробелом.")
-text = input("--> ")
+answer = input("--> ")
 
-splittext = text.split()
 
-for i in splittext:
-    if i not in list:
-        list.append(i)
+def functionone(text):
+    splittext = text.split()
 
-print(splittext)
+    for i in splittext:
+        if i not in list:
+            list.append(i)
 
-print(list)
+    print(splittext)
+    print(list)
+
+
+functionone(answer)
+
+
+def functiontwo(text):
+    splittext = set(text.split())
+
+    print(splittext)
+
+
+functiontwo(answer)
