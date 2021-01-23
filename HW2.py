@@ -30,3 +30,10 @@ def functiontwo(text):
 
 
 functiontwo(answer)
+
+def functionthree(text):
+    splittext = text.split()
+    lastlist = list(dict.fromkeys(splittext))
+    print(lastlist)
+
+functionthree(answer)
