@@ -21,9 +21,12 @@ functionone(answer)
 
 
 def functiontwo(text):
-    splittext = set(text.split())
+    splittext = text.split()
+    righttext = sorted(set(splittext), key=splittext.index)
+
 
     print(splittext)
+    print((righttext))
 
 
 functiontwo(answer)
