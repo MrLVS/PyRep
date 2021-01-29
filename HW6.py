@@ -12,13 +12,12 @@ def binary_palindrome(number):
         return number
 
 
-def find_billion_palindrome(bilrange = 1000000):
-    sum = 0
-    for i in range(1,bilrange):
+def find_billion_palindrome(billionrange=1000000):
+    totalsum = 0
+    for i in range(billionrange):
         if decimal_palindrome(i) and binary_palindrome(i):
-            sum += i
-    print(sum)
+            totalsum += i
+    print(totalsum)
+
 
 find_billion_palindrome()
-
-
