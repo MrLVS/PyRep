@@ -11,7 +11,6 @@ def converting_str_to_int():
         time.sleep(1.5)
 
         def str_to_int(text):
-
             if text:
                 return (ord(text[-1]) - ord('0')) + 10 * str_to_int(text[:-1])
             else:
@@ -21,7 +20,6 @@ def converting_str_to_int():
 
         if resNumber % 2 == 0:
             print(resNumber / 2)
-
         else:
             print(resNumber * 3 + 1)
 
