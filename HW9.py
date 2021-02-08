@@ -5,10 +5,11 @@ from itertools import combinations
 import numpy
 
 
-# problem #6
+# solution problem #6
 def difference_squares_sum(number=100):
     result = sum([i for i in range(number + 1)]) ** 2 - sum([i ** 2 for i in range(number + 1)])
-    print(f"Разница сумм квадратов = {result}")
+    print("Solution problem #6")
+    print(f"Разница сумм квадратов = {result}\n")
     return result
 
 difference_squares_sum()
@@ -23,8 +24,9 @@ def pythagorean_triplet_list_comprehension():
                 a ** 2 + b ** 2 == (1000 - a - b) ** 2]
     result = numpy.prod(triplet)
     result2 = numpy.prod(triplet2)
+    print("Solution problem #9")
     print(f"Тройки пифагора {triplet}, произведение {result} - list comprehension var 1")
-    print(f"Тройки пифагора {triplet2}, произведение {result2} - list comprehension var 2")
+    print(f"Тройки пифагора {triplet2}, произведение {result2} - list comprehension var 2\n")
 
 
 start_time = time.time()
@@ -46,6 +48,13 @@ def pythagorean_triplet_m_n():
 
 
 start_time1 = time.time()
+print("Solution problem #9")
 print(pythagorean_triplet_m_n(), " - более быстрое решение через формулу Эйлера, но с применением циклов.")
 end_time1 = time.time()
-print("Время выполнения", end_time1 - start_time1)
+print("Время выполнения", end_time1 - start_time1, "\n")
+
+
+#Solution problem #40
+list_num = [int(num) for num in ''.join((str(num) for num in range(186000)))]
+print("Solution problem #40")
+print(list_num[1] * list_num[10] * list_num[100] * list_num[1000] * list_num[10000] * list_num[100000] * list_num[1000000],"\n")
