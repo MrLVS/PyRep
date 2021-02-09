@@ -5,12 +5,13 @@ from itertools import combinations
 import numpy
 
 
-# solution problem #6
+# Solution problem #6
 def difference_squares_sum(number=100):
     result = sum([i for i in range(number + 1)]) ** 2 - sum([i ** 2 for i in range(number + 1)])
     print("Solution problem #6")
     print(f"Разница сумм квадратов = {result}\n")
     return result
+
 
 difference_squares_sum()
 
@@ -20,6 +21,7 @@ difference_squares_sum()
 def pythagorean_triplet_list_comprehension():
     triplet = [[a, b, (a ** 2 + b ** 2) ** 0.5] for a, b in combinations(range(1, 500), 2) if
                1000000 - 2000 * a - 2000 * b + 2 * a * b == 0]
+
     triplet2 = [[a, b, 1000 - a - b] for a in range(1, 333) for b in range(a + 1, 500) if
                 a ** 2 + b ** 2 == (1000 - a - b) ** 2]
     result = numpy.prod(triplet)
@@ -54,7 +56,13 @@ end_time1 = time.time()
 print("Время выполнения", end_time1 - start_time1, "\n")
 
 
-#Solution problem #40
-list_num = [int(num) for num in ''.join((str(num) for num in range(186000)))]
+# Solution problem #40
+list_d = [int(num) for num in ''.join((str(num) for num in range(186000)))]
 print("Solution problem #40")
-print(list_num[1] * list_num[10] * list_num[100] * list_num[1000] * list_num[10000] * list_num[100000] * list_num[1000000],"\n")
+print(list_d[1] * list_d[10] * list_d[100] * list_d[1000] * list_d[10000] * list_d[100000] * list_d[1000000], "\n")
+
+# Solution problem #48
+
+a = str(sum([pow(x, x) for x in range(1000)]))
+print("Solution problem #48")
+print(a[-10:])
