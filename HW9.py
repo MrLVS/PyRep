@@ -63,6 +63,6 @@ print(list_d[1] * list_d[10] * list_d[100] * list_d[1000] * list_d[10000] * list
 
 # Solution problem #48
 
-a = str(sum([pow(x, x) for x in range(1001)]))
+a = str(sum([pow(x, x) for x in range(1,1001)]))
 print("Solution problem #48")
 print(a[-10:])
