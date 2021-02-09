@@ -7,6 +7,7 @@ import numpy
 
 # Solution problem #6
 def difference_squares_sum(number=100):
+    """ Function for finding the difference of squares of numbers"""
     result = sum([i for i in range(number + 1)]) ** 2 - sum([i ** 2 for i in range(number + 1)])
     print("Solution problem #6")
     print(f"Разница сумм квадратов = {result}\n")
@@ -19,6 +20,7 @@ difference_squares_sum()
 # problem #9
 # solution #1
 def pythagorean_triplet_list_comprehension():
+    """ Function for finding Pythagoras triples with a sum equal to 1000."""
     triplet = [[a, b, (a ** 2 + b ** 2) ** 0.5] for a, b in combinations(range(1, 500), 2) if
                1000000 - 2000 * a - 2000 * b + 2 * a * b == 0]
 
@@ -40,6 +42,7 @@ print("Время выполнения", end_time - start_time)
 # problem #9
 # solution #2 more quickly that solution #1 Euclid formula (a=m ^ 2 - n ^ 2, b = 2mn, c = m ^ 2 + n ^ 2)
 def pythagorean_triplet_m_n():
+    """ Function for finding Pythagoras triples with a sum equal to 1000."""
     for n in range(1, 32):
         for m in range(1, 32):
             a = n ** 2 - m ** 2
