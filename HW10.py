@@ -1,7 +1,7 @@
 # Solution of the Collatz Hypothesis
 
 
-def Collatz(number):
+def сollatz(number):
     """ A function that divides a number by two if the number is even,
      divides by three if the number is not even, and starts a new loop.
       Counts the number of cycles until the number is exactly 1. """
