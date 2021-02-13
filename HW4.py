@@ -13,7 +13,7 @@ def find_sum_int_in_string(inputstring):
         elif stringelement != "":
             sumnumbers += int(stringelement)
             stringelement = ""
-    if stringelement != "": #Проверка последнего элемента, если он был числом
+    if stringelement != "":  # Проверка последнего элемента, если он был числом
         sumnumbers += int(stringelement)
 
     print(sumnumbers)
