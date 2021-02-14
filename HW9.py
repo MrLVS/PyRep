@@ -20,16 +20,16 @@ difference_squares_sum()
 # solution #1
 def pythagorean_triplet_list_comprehension():
     """ Function for finding Pythagoras triples with a sum equal to 1000."""
-    triplet = [[a, b, (a ** 2 + b ** 2) ** 0.5] for a, b in combinations(range(1, 500), 2) if
-               1000000 - 2000 * a - 2000 * b + 2 * a * b == 0]
+    triplet = numpy.prod([[a, b, (a ** 2 + b ** 2) ** 0.5] for a, b in combinations(range(1, 500), 2) if
+               1000000 - 2000 * a - 2000 * b + 2 * a * b == 0])
 
-    triplet2 = [[a, b, 1000 - a - b] for a in range(1, 333) for b in range(a + 1, 500) if
-                a ** 2 + b ** 2 == (1000 - a - b) ** 2]
-    result = numpy.prod(triplet)
-    result2 = numpy.prod(triplet2)
+    triplet2 = numpy.prod([[a, b, 1000 - a - b] for a in range(1, 333) for b in range(a + 1, 500) if
+                a ** 2 + b ** 2 == (1000 - a - b) ** 2])
+
+
     print("Solution problem #9")
-    print(f"Тройки пифагора {triplet}, произведение {result} - list comprehension var 1")
-    print(f"Тройки пифагора {triplet2}, произведение {result2} - list comprehension var 2\n")
+    print(f"Тройки пифагора вариант 1 - {triplet} - list comprehension var 1")
+    print(f"Тройки пифагора вариант 2 - {triplet2} - list comprehension var 2\n")
 
 
 pythagorean_triplet_list_comprehension()
