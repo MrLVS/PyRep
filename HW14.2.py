@@ -1,6 +1,12 @@
-import pickle
 
-with open('/home/vitaliy/HomeWork/dump.dat', 'r') as dump_in:
-    Mary = pickle.load(dump_in)
+import dill
 
-print(Mary)
+
+with open('C:/Users/mrlvs/OneDrive/Рабочий стол/DV/Marydump', 'rb') as file:
+    Mary = dill.load(file)
+
+print(type(Mary))
+print(Mary.name)
+print(Mary.phone)
+print(Mary.say_name)
+Mary.say_phone
