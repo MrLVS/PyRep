@@ -9,4 +9,4 @@ print(type(Mary))
 print(Mary.name)
 print(Mary.phone)
 print(Mary.say_name)
-Mary.say_phone
+

@@ -15,9 +15,6 @@ class Employee:
     def say_phone(self):
         print(f"My phone {self.phone}.")
 
-if __name__ == '__main__':
-    Employee = Employee()
-
 
 Mary = Employee("Mary", "Popins", "Director", "+9657907365")
 
