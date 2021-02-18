@@ -1,4 +1,3 @@
-
 import pwd
 
 with open("/home/vitaliy/HomeWork/output.txt", 'w') as file:
@@ -7,7 +6,6 @@ with open("/home/vitaliy/HomeWork/output.txt", 'w') as file:
         shells_dict = {i: info_list.count(i) for i in info_list}
         shells_info = str(shells_dict)
         file.write(shells_info + "\n")
-
 
     with open("/etc/group") as groupfile:
         group = {}
