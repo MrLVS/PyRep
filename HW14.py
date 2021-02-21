@@ -1,5 +1,5 @@
 
-import dill
+import pickle
 
 
 class Employee:
@@ -20,4 +20,4 @@ Mary = Employee("Mary", "Popins", "Director", "+9657907365")
 
 # Сохраняем Mary
 with open('C:/Users/mrlvs/OneDrive/Рабочий стол/DV/Marydump', 'wb') as file:
-    dill.dump(Mary, file)
+    pickle.dump(Mary, file)
