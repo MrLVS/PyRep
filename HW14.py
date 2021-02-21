@@ -6,7 +6,7 @@ class Employee:
     def __init__(self, name, lastname, position, phone):
         self.name = name
         self.lastname = lastname
-        self.positon = position
+        self.position = position
         self.phone = phone
 
     def say_name(self):
