@@ -6,11 +6,19 @@ def find_min_int_out_of_string(some_string):
     """ A function to find the minimum number outside the list. """
     int_list = list(map(int, some_string.split()))
 
-    for i in range(len(int_list)):
-        if i not in int_list:
+    check =[]
+    for i in range(1, len(int_list)):
+        if i in int_list:
+            continue
+        elif i not in int_list:
             print(i)
+            check.append(i)
             break
+
+    if check:
+        pass
+    else:
+        print(len(int_list)+1)
 
 
 find_min_int_out_of_string(answer)
-
