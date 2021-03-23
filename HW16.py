@@ -2,7 +2,7 @@ import requests
 import urllib
 
 
-API_KEY = "AIzaSyCC8Yge_KE1CoZWmW4-XJgzfpC8G7MLtOw"
+API_KEY = "googleAPIKEY"
 
 with open("C:\HW\Coordinates.txt") as f:
         line = f.readline()
