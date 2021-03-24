@@ -2,7 +2,7 @@ import requests
 import urllib
 from GPSPhoto import gpsphoto
 
-API_KEY = "AIzaSyCC8Yge_KE1CoZWmW4-XJgzfpC8G7MLtOw"
+API_KEY = ""
 
 
 def get_coordinates(filepath):
